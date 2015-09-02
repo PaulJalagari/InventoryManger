@@ -10,6 +10,7 @@ public class simpleSum {
 		int b=sc.nextInt();
 		int z=s.sum(a,b);
 		System.out.println("Sum is"+z);
+		System.out.println("Commiting a change to test");
 	}
 
 }
