@@ -20,13 +20,13 @@ public class FileCompare {
 		fc.comparingFiles(text1, text2);
 	}
 
-	private void fileIntoArray(Scanner read, List<String> text) {
+	public void fileIntoArray(Scanner read, List<String> text) {
 		while (read.hasNext()) {
 			text.add(read.next().toLowerCase());
 		}
 	}
 
-	private void comparingFiles(List<String> compare, List<String> compareto) {
+	public void comparingFiles(List<String> compare, List<String> compareto) {
 		List<String> common = new ArrayList<String>(compare);
 		common.retainAll(compareto);
 		for (int i = 0; i < common.size(); i++) {
